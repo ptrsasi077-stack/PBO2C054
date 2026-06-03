@@ -1,0 +1,36 @@
+// Class Mahasiswa
+class Mahasiswa {
+    // Atribut
+    String nama;
+    String nim;
+    String jurusan;
+
+    // Constructor
+    Mahasiswa(String nama, String nim, String jurusan) {
+        this.nama = nama;
+        this.nim = nim;
+        this.jurusan = jurusan;
+    }
+
+    // Method tampilData()
+    void tampilData() {
+        System.out.println("Nama     : " + nama);
+        System.out.println("NIM      : " + nim);
+        System.out.println("Jurusan  : " + jurusan);
+        System.out.println();
+    }
+}
+
+// Main class
+public class main {
+    public static void main(String[] args) {
+
+        // Membuat object mahasiswa
+        Mahasiswa mhs1 = new Mahasiswa("Sasi", "250631100054", "Pendidikan Informatika");
+        Mahasiswa mhs2 = new Mahasiswa("Anisa", "250631100060", "Pendidikan Informatika");
+
+        // Menampilkan data mahasiswa
+        mhs1.tampilData();
+        mhs2.tampilData();
+    }
+}
